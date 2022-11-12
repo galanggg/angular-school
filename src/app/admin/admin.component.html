@@ -1,0 +1,32 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button (click)="goToAddSchool()">Add School</button>
+      <button mat-flat-button (click)="goToAdminRegis()">
+        Administrator Registration
+      </button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="text-hero-container">
+      <div class="long-text">Admin, <br />Welcome to the SchoolHELP!</div>
+      <div class="sign-in-text">Add a new school?</div>
+      <div>
+        <button
+          (click)="goToAddSchool()"
+          mat-flat-button
+          class="create-account-button"
+        >
+          Add School
+        </button>
+      </div>
+    </div>
+    <div class="image-hero-container">
+      <img src="/assets/learnpic.png" />
+    </div>
+  </div>
+</div>

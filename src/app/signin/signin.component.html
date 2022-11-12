@@ -1,0 +1,37 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span>SchoolHELP</span>
+    <span class="spacer"></span>
+    <button mat-flat-button (click)="goToHomePage()">back to homepage</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="form-container">
+      <form class="example-form" [formGroup]="form">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            placeholder="name@example.com"
+            type="email"
+            formControlName="username"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            placeholder="name@example.com"
+            type="password"
+            formControlName="password"
+          />
+        </mat-form-field>
+        <div class="button-form">
+          <button mat-flat-button color="primary" (click)="submitForm()">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

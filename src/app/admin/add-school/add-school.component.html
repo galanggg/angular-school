@@ -1,0 +1,56 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo" (click)="goToAdminPage()">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button>Add School</button>
+      <button mat-flat-button (click)="goToAdminRegis()">
+        Administrator Registration
+      </button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="form-container">
+      <div class="form-text">School Registration Form</div>
+      <form class="example-form" [formGroup]="form">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>School Name</mat-label>
+          <input
+            matInput
+            placeholder="example school name"
+            type="text"
+            formControlName="school"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Address</mat-label>
+          <input
+            matInput
+            placeholder="Street Address Line 2 District A.12"
+            type="text"
+            formControlName="address"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>City</mat-label>
+          <input
+            matInput
+            placeholder="City name"
+            type="text"
+            formControlName="city"
+          />
+        </mat-form-field>
+        <div class="button-form">
+          <button mat-flat-button color="primary" (click)="submitForm()">
+            Save
+          </button>
+          <!-- <button mat-flat-button color="primary" (click)="getvalue()">
+            Get value
+          </button> -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
