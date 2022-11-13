@@ -1,0 +1,12 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+
+  .text {
+    padding: 12px;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+    font-style: italic;
+  }
+}
