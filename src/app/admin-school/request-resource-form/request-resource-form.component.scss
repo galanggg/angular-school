@@ -1,0 +1,49 @@
+.container-homepage {
+  mat-toolbar {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .button-container {
+    margin-left: 7rem;
+    display: flex;
+    gap: 18px;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 12rem;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      text-align: center;
+
+      .title-form {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .student-number {
+        width: 175px;
+      }
+    }
+  }
+}

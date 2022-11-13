@@ -1,0 +1,39 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button (click)="goToAssistRequest()">
+        Assistance Request
+      </button>
+      <button mat-flat-button (click)="goToViewRequest()">View Request</button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="assist-container">
+      <div class="tutorial-container">
+        <div class="header-tutorial">Tutorial Request</div>
+        <div class="body-tutorial">
+          Click the button below <br />if you want to request <br />
+          a tutorial
+        </div>
+        <button mat-flat-button (click)="goToFormTutorial()">
+          Tutorial Request
+        </button>
+      </div>
+      <div class="resource-container">
+        <div class="header-tutorial">Resource Request</div>
+        <div class="body-tutorial">
+          Click the button below <br />
+          if you want to request <br />
+          a resource
+        </div>
+        <button mat-flat-button (click)="goToFormResources()">
+          Resource Request
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

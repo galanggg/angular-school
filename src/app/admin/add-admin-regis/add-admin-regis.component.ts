@@ -27,6 +27,10 @@ export class AddAdminRegisComponent implements OnInit {
     this.router.navigate(['/admin/add-school'])
   }
 
+  goToAddSchoolAdmin() {
+    this.router.navigate(['admin/add-admin-school'])
+  }
+
   logout() {
     this.router.navigate(['/'])
   }

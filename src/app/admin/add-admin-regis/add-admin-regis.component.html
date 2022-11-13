@@ -28,7 +28,9 @@
             <div class="list-item">{{ school.city }}</div>
 
             <div class="button-container-2">
-              <button mat-flat-button>Add School Administrator</button>
+              <button mat-flat-button (click)="goToAddSchoolAdmin()">
+                Add School Administrator
+              </button>
             </div>
           </div>
         </mat-list-option>

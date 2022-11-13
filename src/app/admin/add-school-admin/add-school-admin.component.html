@@ -1,0 +1,59 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo" (click)="goToAdminPage()">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button>Add School</button>
+      <button mat-flat-button (click)="goToAdminRegis()">
+        Administrator Registration
+      </button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="form-container">
+      <div class="form-text">School Administrator Form</div>
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="john doe" type="text" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Address</mat-label>
+          <input
+            matInput
+            placeholder="Street Address Line 2 District A.12"
+            type="text"
+          />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Full Name</mat-label>
+          <input matInput placeholder="john" type="text" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="example@email.com" type="email" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Phone Number</mat-label>
+          <input matInput placeholder="08777666" type="number" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Position</mat-label>
+          <input matInput placeholder="teacher" type="text" />
+        </mat-form-field>
+        <div class="button-form">
+          <button mat-flat-button color="primary">Save</button>
+          <!-- <button mat-flat-button color="primary" (click)="getvalue()">
+              Get value
+            </button> -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

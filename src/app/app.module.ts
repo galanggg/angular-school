@@ -16,6 +16,13 @@ import { SharedModule } from './shared/shared.module'
 import { AddSchoolComponent } from './admin/add-school/add-school.component'
 import { AddAdminRegisComponent } from './admin/add-admin-regis/add-admin-regis.component'
 import { MatListModule } from '@angular/material/list'
+import { AdminSchoolComponent } from './admin-school/admin-school.component'
+import { AssistRequestComponent } from './admin-school/assist-request/assist-request.component'
+import { ViewRequestComponent } from './admin-school/view-request/view-request.component'
+import { RequestTutorialFormComponent } from './admin-school/request-tutorial-form/request-tutorial-form.component'
+import { RequestResourceFormComponent } from './admin-school/request-resource-form/request-resource-form.component'
+import { MatSelectModule } from '@angular/material/select';
+import { AddSchoolAdminComponent } from './admin/add-school-admin/add-school-admin.component'
 
 @NgModule({
   declarations: [
@@ -25,6 +32,12 @@ import { MatListModule } from '@angular/material/list'
     SigninComponent,
     AddSchoolComponent,
     AddAdminRegisComponent,
+    AdminSchoolComponent,
+    AssistRequestComponent,
+    ViewRequestComponent,
+    RequestTutorialFormComponent,
+    RequestResourceFormComponent,
+    AddSchoolAdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +50,7 @@ import { MatListModule } from '@angular/material/list'
     MatSnackBarModule,
     SharedModule,
     MatListModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

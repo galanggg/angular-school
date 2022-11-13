@@ -13,6 +13,11 @@ export class SigninComponent implements OnInit {
     username: 'schoolHelp@email.com',
     password: 'admin123',
   }
+
+  credentials2 = {
+    username: 'adminschool@email.com',
+    password: 'admin123',
+  }
   form = this.formBuilder.group({
     username: [null],
     password: [null],
@@ -41,6 +46,11 @@ export class SigninComponent implements OnInit {
     if (JSON.stringify(this.form.value) === JSON.stringify(this.credentials)) {
       this.openSnackBar('true')
       this.router.navigate(['admin'])
+      return
+    }
+    if (JSON.stringify(this.form.value) === JSON.stringify(this.credentials2)) {
+      this.openSnackBar('true')
+      this.router.navigate(['admin-school/assist-request'])
       return
     }
     this.openSnackBar('false')

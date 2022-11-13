@@ -1,0 +1,42 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo" (click)="goToAssistRequest()">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button (click)="goToAssistRequest()">
+        Assistance Request
+      </button>
+      <button mat-flat-button (click)="goToViewRequest()">View Request</button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <form>
+      <form class="example-form">
+        <div class="title-form">Request for Resource</div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Resource Description</mat-label>
+          <input matInput placeholder="Example desc tutorial" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Proposed Date & Time</mat-label>
+          <input matInput type="date" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Resource Type</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{ food.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="student-number" appearance="outline">
+          <mat-label>Resource Number</mat-label>
+          <input matInput placeholder="10" type="number" step="1" />
+        </mat-form-field>
+        <button mat-flat-button>Submit</button>
+      </form>
+    </form>
+  </div>
+</div>

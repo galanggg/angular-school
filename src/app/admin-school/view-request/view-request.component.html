@@ -1,0 +1,40 @@
+<div class="container-homepage">
+  <mat-toolbar>
+    <span class="logo" (click)="goToAssistRequest()">SchoolHELP</span>
+    <div class="button-container">
+      <button mat-flat-button (click)="goToAssistRequest()">
+        Assistance Request
+      </button>
+      <button mat-flat-button (click)="goToViewRequest()">View Request</button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+  <div class="hero-container">
+    <div class="form-container">
+      <div class="form-text">Request List</div>
+      <div class="header-container">
+        <div class="header-item">Request ID</div>
+        <div class="header-item">Date</div>
+        <div class="header-item">Status</div>
+      </div>
+      <mat-selection-list #school [multiple]="false">
+        <mat-list-option
+          *ngFor="let request of listRequest"
+          [value]="request.id"
+        >
+          <div class="list-container">
+            <div class="list-item">{{ request.id }}</div>
+            <div class="list-item">{{ request.date }}</div>
+            <div class="list-item">{{ request.status }}</div>
+
+            <div class="button-container-2">
+              <button mat-flat-button>Review</button>
+            </div>
+          </div>
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+.container-homepage {
+  mat-toolbar {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .button-container {
+    margin-left: 7rem;
+    display: flex;
+    gap: 18px;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+    .text-hero-container {
+      .long-text {
+        font-weight: bold;
+        font-size: 34px;
+      }
+      .sign-in-text {
+        margin-top: 4rem;
+        font-size: 34px;
+        font-weight: bold;
+      }
+      .short-text {
+        font-weight: lighter;
+        color: black;
+      }
+      .create-account-button {
+        width: 220px;
+        height: 40px;
+        margin-top: 1rem;
+      }
+    }
+    .image-hero-container {
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}

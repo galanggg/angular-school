@@ -1,0 +1,81 @@
+.container-homepage {
+  mat-toolbar {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .button-container {
+    margin-left: 7rem;
+    display: flex;
+    gap: 18px;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 15rem;
+    button {
+      color: white;
+      background-color: #3da9ff;
+    }
+    .assist-container {
+      display: flex;
+      flex-direction: row;
+      gap: 15rem;
+
+      .tutorial-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .header-tutorial {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .body-tutorial {
+          font-size: 24px;
+          font-weight: lighter;
+        }
+        button {
+          width: 100%;
+          margin-top: 20px;
+          height: 40px;
+        }
+      }
+
+      .resource-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .header-tutorial {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .body-tutorial {
+          font-size: 24px;
+          font-weight: lighter;
+        }
+        button {
+          width: 100%;
+          margin-top: 20px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
